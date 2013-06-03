@@ -1,4 +1,4 @@
-package org.cdi.advocacy;
+package org.cdi.advocacy.ex01;
 
 import java.math.BigDecimal;
 import java.util.logging.Logger;
@@ -7,7 +7,8 @@ import javax.inject.Inject;
 
 import org.cdi.advocacy.api.ATMTransport;
 import org.cdi.advocacy.api.AutomatedTellerMachine;
-import org.cdi.advocacy.impl.AutomatedTellerMachineImpl;
+import org.cdi.advocacy.impl.common.StandardAtmTransport;
+import org.cdi.advocacy.impl.ex01.AutomatedTellerMachineImpl;
 import org.jboss.arquillian.container.test.api.Deployment;
 import org.jboss.arquillian.junit.Arquillian;
 import org.jboss.shrinkwrap.api.ShrinkWrap;
@@ -25,6 +26,7 @@ public class AutomatedTellerMachineTest {
 				.addPackages(true, 
 						ATMTransport.class.getPackage(),
 						AutomatedTellerMachineImpl.class.getPackage(),
+						StandardAtmTransport.class.getPackage(),
 						AutomatedTellerMachineTest.class.getPackage()
 				)
 				.addAsManifestResource("beans.xml", "beans.xml");

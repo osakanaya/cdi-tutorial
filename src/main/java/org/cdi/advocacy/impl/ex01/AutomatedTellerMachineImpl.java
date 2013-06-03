@@ -1,4 +1,4 @@
-package org.cdi.advocacy.impl;
+package org.cdi.advocacy.impl.ex01;
 
 import java.math.BigDecimal;
 import java.util.logging.Logger;

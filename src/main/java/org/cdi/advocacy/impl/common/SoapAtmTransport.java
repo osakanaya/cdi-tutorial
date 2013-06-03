@@ -1,4 +1,4 @@
-package org.cdi.advocacy.impl;
+package org.cdi.advocacy.impl.common;
 
 import java.util.logging.Logger;
 
